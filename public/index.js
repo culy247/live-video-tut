@@ -10,7 +10,7 @@ var sessionDescription = window.RTCSessionDescription ||
     window.mozRTCSessionDescription ||
     window.webkitRTCSessionDescription ||
     window.msRTCSessionDescription;
-
+// only on secure contenxt
 if (navigator.mediaDevices === undefined) {
     navigator.mediaDevices = {};
 }
